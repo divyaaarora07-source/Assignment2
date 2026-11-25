@@ -1,0 +1,40 @@
+using System;
+
+class GraduateStudent : Student
+{
+    public void ShowData()
+    {
+        Console.WriteLine("----- Access Through Inheritance -----");
+
+        Console.WriteLine("Name: " + Name);
+        // Console.WriteLine("Age: " + Age);  // Not accessible
+        Console.WriteLine("Department: " + Department);
+        Console.WriteLine("CGPA: " + CGPA);
+        Console.WriteLine("College: " + College);
+        Console.WriteLine("Address: " + Address);
+
+        // Access through Student object
+        Student s = new Student();
+
+        Console.WriteLine("\n----- Access Through Student Object -----");
+
+        Console.WriteLine("Name: " + s.Name);
+        // Console.WriteLine("Age: " + s.Age); // Not accessible
+        // Console.WriteLine("Department: " + s.Department); // Not accessible
+        Console.WriteLine("CGPA: " + s.CGPA);
+        Console.WriteLine("College: " + s.College);
+        // Console.WriteLine("Address: " + s.Address); // Not accessible
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        GraduateStudent gs = new GraduateStudent();
+
+        gs.ShowData();
+
+        Console.ReadLine();
+    }
+}
