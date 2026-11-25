@@ -1,0 +1,37 @@
+using System;
+
+class Student
+{
+    // Data Members with different access modifiers
+    public string Name = "Priyanshi";
+    private int Age = 22;
+    protected string Department = "MCA";
+    internal double CGPA = 8.5;
+    protected internal string College = "GLA University";
+    private protected string Address = "Mathura";
+
+    // Public method to display all members
+    public void Display()
+    {
+        Console.WriteLine("----- Student Details -----");
+
+        Console.WriteLine("Name       : " + Name);
+        Console.WriteLine("Age        : " + Age);
+        Console.WriteLine("Department : " + Department);
+        Console.WriteLine("CGPA       : " + CGPA);
+        Console.WriteLine("College    : " + College);
+        Console.WriteLine("Address    : " + Address);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Student s = new Student();
+
+        s.Display();
+
+        Console.ReadLine();
+    }
+}
