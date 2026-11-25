@@ -1,0 +1,24 @@
+using System;
+using StudentLibrary;
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        Student s = new Student();
+
+        Console.WriteLine("----- Student Details -----");
+
+        // Accessible members
+        Console.WriteLine("Name: " + s.Name);
+
+        // Inaccessible members
+        // Console.WriteLine("Age: " + s.Age);
+        // Console.WriteLine("Department: " + s.Department);
+        // Console.WriteLine("CGPA: " + s.CGPA);
+        // Console.WriteLine("College: " + s.College);
+        // Console.WriteLine("Address: " + s.Address);
+
+        Console.ReadLine();
+    }
+}
