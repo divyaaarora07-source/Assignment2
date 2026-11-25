@@ -1,0 +1,36 @@
+using System;
+using StudentLibrary;
+
+class ResearchStudent : Student
+{
+    public void ShowData()
+    {
+        Console.WriteLine("----- Access Through Inheritance -----");
+
+        // Accessible members
+        Console.WriteLine("Name: " + Name);
+        Console.WriteLine("Department: " + Department);
+        Console.WriteLine("College: " + College);
+
+        // Inaccessible members
+        // Console.WriteLine("Age: " + Age);
+        // Console.WriteLine("CGPA: " + CGPA);
+        // Console.WriteLine("Address: " + Address);
+
+
+        // Creating Student object
+        Student s = new Student();
+
+        Console.WriteLine("\n----- Access Through Student Object -----");
+
+        // Accessible member
+        Console.WriteLine("Name: " + s.Name);
+
+        // Inaccessible members
+        // Console.WriteLine("Age: " + s.Age);
+        // Console.WriteLine("Department: " + s.Department);
+        // Console.WriteLine("CGPA: " + s.CGPA);
+        // Console.WriteLine("College: " + s.College);
+        // Console.WriteLine("Address: " + s.Address);
+    }
+}
