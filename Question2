@@ -1,0 +1,32 @@
+using System;
+
+class TestStudent
+{
+    public void DisplayDetails()
+    {
+        Student s = new Student();
+
+        Console.WriteLine("----- Student Details -----");
+
+        // Accessible members
+        Console.WriteLine("Name: " + s.Name);
+        Console.WriteLine("CGPA: " + s.CGPA);
+        Console.WriteLine("College: " + s.College);
+
+        // Inaccessible members
+        // Console.WriteLine(s.Age);
+        // Console.WriteLine(s.Department);
+        // Console.WriteLine(s.Address);
+    }
+}
+
+class Program
+{
+    static void Main(string[] args)
+    {
+        TestStudent obj = new TestStudent();
+        obj.DisplayDetails();
+
+        Console.ReadLine();
+    }
+}
